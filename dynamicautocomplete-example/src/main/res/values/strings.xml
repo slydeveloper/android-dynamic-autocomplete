@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DynamicAutocompleteLib</string>
+    <string name="simple_dictionary">Simple Dictionary</string>
+    <string name="extended_dictionary">Extended Dictionary</string>
+    <string name="word_hint">Input english word</string>
+    <string name="country_hint">Input country name</string>
+
+</resources>
