@@ -7,6 +7,7 @@ version = '1.0.0'
 
 def siteUrl = 'https://github.com/slydeveloper/android-dynamic-autocomplete'
 def gitUrl = 'https://github.com/slydeveloper/android-dynamic-autocomplete.git'
+def bintrayConfig = 'local.properties';
 
 android {
     compileSdkVersion 16
@@ -68,7 +69,10 @@ install {
 }
 
 Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+if (project.rootProject.file(bintrayConfig).exists()) {
+    properties.load(project.rootProject.file(bintrayConfig).newDataInputStream())
+}
 
 bintray {
     user = properties.getProperty("bintray.user")
