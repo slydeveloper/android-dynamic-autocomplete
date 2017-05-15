@@ -9,7 +9,7 @@ Here is a simple and easy to use library that helps extends [AutoCompleteTextVie
 
 Video
 =====
-![Screen](example.gif)
+![Screen](video.gif)
 
 Example
 =====
